@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentInPLK Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>RentInPLK</h2>
+                <button id="sidebarToggle" class="sidebar-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active"><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#users"><i class="fas fa-users"></i> Users</a></li>
+                <li><a href="#rooms"><i class="fas fa-building"></i> Rooms</a></li>
+                <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="#messages"><i class="fas fa-envelope"></i> Messages</a></li>
+                <li><a href="#notifications"><i class="fas fa-bell"></i> Notifications</a></li>
+                <li><a href="#statistics"><i class="fas fa-chart-bar"></i> Statistics</a></li>
+                <li><a href="#landlords"><i class="fas fa-user-tie"></i> Landlords</a></li>
+                <li><a href="#reviews"><i class="fas fa-star"></i> Reviews</a></li>
+                <li><a href="#reports"><i class="fas fa-file-alt"></i> Reports</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <img src="rentinPlk.jpg" alt="Admin" class="user-avatar">
+                    <span class="user-name">Admin User</span>
+                </div>
+                <button id="logoutBtn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-search">
+                    <input type="text" placeholder="Search...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="header-right">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="messages">
+                        <i class="fas fa-envelope"></i>
+                        <span class="badge">5</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Overview -->
+            <div class="dashboard-content">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #e3f2fd;">
+                            <i class="fas fa-home" style="color: #1e88e5;"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Total Rooms</h3>
+                            <p class="stat-number">156</p>
+                            <span class="stat-trend positive">+12% from last month</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #e8f5e9;">
+                            <i class="fas fa-user-tie" style="color: #43a047;"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Active Landlords</h3>
+                            <p class="stat-number">45</p>
+                            <span class="stat-trend positive">+8% from last month</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #fff3e0;">
+                            <i class="fas fa-users" style="color: #fb8c00;"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Total Tenants</h3>
+                            <p class="stat-number">892</p>
+                            <span class="stat-trend positive">+15% from last month</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: #fce4ec;">
+                            <i class="fas fa-money-bill" style="color: #e91e63;"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Monthly Revenue</h3>
+                            <p class="stat-number">R458,920</p>
+                            <span class="stat-trend positive">+18% from last month</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <!-- Recent Activity -->
+                    <div class="dashboard-card">
+                        <h3><i class="fas fa-history"></i> Recent Activity</h3>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-key"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <p>New tenant moved in - Room 304</p>
+                                    <span>2 hours ago</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <p>New review received - Block B</p>
+                                    <span>4 hours ago</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-money-bill"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <p>Rent payment received - Room 512</p>
+                                    <span>Yesterday</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Latest Reviews -->
+                    <div class="dashboard-card">
+                        <h3><i class="fas fa-star"></i> Latest Reviews</h3>
+                        <div class="reviews-list">
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <img src="https://via.placeholder.com/30" alt="User">
+                                    <div class="review-info">
+                                        <h4>John Doe</h4>
+                                        <div class="stars">★★★★☆</div>
+                                    </div>
+                                </div>
+                                <p>Great location and excellent facilities!</p>
+                            </div>
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <img src="https://via.placeholder.com/30" alt="User">
+                                    <div class="review-info">
+                                        <h4>Jane Smith</h4>
+                                        <div class="stars">★★★★★</div>
+                                    </div>
+                                </div>
+                                <p>Very clean and well-maintained property.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-storage-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

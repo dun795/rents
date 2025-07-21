@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Rent In PLK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="stylesheet/dash.css">
+    
+   
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">RentInPLK</div>
+            <div class="user-info">
+                <div class="user-avatar" id="userAvatar">A</div>
+                <div class="user-details">
+                    <h3 id="userName">Loading...</h3>
+                    <span id="userType">...</span>
+                </div>
+                <button class="logout-btn" onclick="showLogoutModal()">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Logout Confirmation Modal -->
+    <div class="modal-overlay" id="logoutModal">
+        <div class="logout-modal">
+            <div class="logout-modal-header">
+                <div class="logout-modal-icon">
+                    <i class="fas fa-sign-out-alt"></i>
+                </div>
+                <h3 class="logout-modal-title">Confirm Logout</h3>
+                <p class="logout-modal-message">
+                    Are you sure you want to sign out of your account? You will need to log in again to access your dashboard.
+                </p>
+            </div>
+            <div class="logout-modal-actions">
+                <button class="modal-btn modal-btn-cancel" onclick="hideLogoutModal()">
+                    <i class="fas fa-times"></i> Cancel
+                </button>
+                <button class="modal-btn modal-btn-confirm" onclick="confirmLogout()">
+                    <i class="fas fa-check"></i> Yes, Sign Out
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Loading State -->
+        <div id="loadingState" class="loading">
+            <div class="spinner"></div>
+            <p>Loading dashboard...</p>
+        </div>
+
+        <!-- Error State -->
+        <div id="errorState" class="error-state" style="display: none;">
+            <i class="fas fa-exclamation-triangle"></i>
+            <h3>Access Denied</h3>
+            <p>Please log in to access the dashboard.</p>
+            <br>
+            <a href="dashboard.html" class="action-btn">Go to Login</a>
+        </div>
+
+        <!-- Dashboard Content -->
+        <div id="dashboardContent" style="display: none;">
+            <h1 class="dashboard-title" id="dashboardTitle">Welcome to Dashboard</h1>
+            <p class="dashboard-subtitle" id="dashboardSubtitle">Manage your operations efficiently</p>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid" id="statsGrid">
+                <!-- Stats will be populated by JavaScript -->
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-bolt"></i>
+                    Quick Actions
+                </h2>
+                <div class="quick-actions" id="quickActions">
+                    <!-- Actions will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="content-section">
+                <h2 class="section-title">
+                    <i class="fas fa-clock"></i>
+                    Recent Activity
+                </h2>
+                <table class="data-table" id="activityTable">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="activityTableBody">
+                        <!-- Activity data will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+<script src="javascript/dashboard.js"></script>
+</body>
+</html>

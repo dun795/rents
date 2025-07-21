@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our selection of rooms available for rent in Polokwane. Find the perfect match for your budget and needs.">
+    <meta name="keywords" content="rooms for rent, budget rooms, student accommodations, secure housing, Polokwane">
+    <meta name="author" content="Elias Malope">
+    <title>Rooms - Rent In PLK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet/rooms.css">
+    <link rel="stylesheet" href="styles1.css">
+   
+</head>
+<body>
+    <header>
+        <h1>Rent In Polokwane</h1>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">RentInPLK</a>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="rooms-container">
+            <div class="rooms-header">
+                <h1>Available Rooms</h1>
+                <p>Browse our selection of affordable rooms in Polokwane. Filter by location, price, and amenities to find your perfect match.</p>
+            </div>
+
+            <div class="room-filters">
+                <form class="filter-form">
+                    <div class="filter-group">
+                        <label for="location">Location</label>
+                        <select id="location" name="location">
+                            <option value="">All Locations</option>
+                            <option value="city-center">polokwane central</option>
+                            <option value="university">annadel</option>
+                            <option value="bendor">Bendor</option>
+                            <option value="nirvana">Nirvana</option>
+                            <option value="flora-park">Flora Park</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="price-min">Min Price (R)</label>
+                        <input type="number" id="price-min" name="price-min" placeholder="0" min="0">
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="price-max">Max Price (R)</label>
+                        <input type="number" id="price-max" name="price-max" placeholder="5000" min="0">
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="amenities">Amenities</label>
+                        <select id="amenities" name="amenities">
+                            <option value="">Any Amenities</option>
+                            <option value="wifi">Wi-Fi</option>
+                            <option value="furnished">Furnished</option>
+                            <option value="security">24/7 Security</option>
+                            <option value="water">Water Included</option>
+                            <option value="electricity">Prepaid Electricity</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-buttons">
+                        <button type="reset" class="filter-btn reset">Reset</button>
+                        <button type="submit" class="filter-btn apply">Apply Filters</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="room-grid">
+                <!-- Room 1 -->
+                <div class="room-card">
+                    <div class="room-badge">Featured</div>
+                    <div class="room-img">
+                        <img src="/api/placeholder/400/320" alt="Single Room near University">
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title">Single Room near University</h3>
+                        <div class="room-details">
+                            <div class="room-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>University Area</span>
+                            </div>
+                            <div class="room-detail">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>12 m²</span>
+                            </div>
+                            <div class="room-detail">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Available Now</span>
+                            </div>
+                        </div>
+                        <div class="room-amenities">
+                            <span class="amenity">Wi-Fi</span>
+                            <span class="amenity">Furnished</span>
+                            <span class="amenity">Water Included</span>
+                        </div>
+                        <div class="room-price">R2,500/month</div>
+                        <div class="room-actions">
+                            <a href="#" class="view-details">View Details</a>
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room 2 -->
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="/api/placeholder/400/320" alt="Spacious Room in Flora Park">
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title">Spacious Room in Flora Park</h3>
+                        <div class="room-details">
+                            <div class="room-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Flora Park</span>
+                            </div>
+                            <div class="room-detail">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>16 m²</span>
+                            </div>
+                            <div class="room-detail">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Available: 15 April</span>
+                            </div>
+                        </div>
+                        <div class="room-amenities">
+                            <span class="amenity">Wi-Fi</span>
+                            <span class="amenity">Bathroom</span>
+                            <span class="amenity">Security</span>
+                            <span class="amenity">Parking</span>
+                        </div>
+                        <div class="room-price">R3,200/month</div>
+                        <div class="room-actions">
+                            <a href="#" class="view-details">View Details</a>
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room 3 -->
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="/api/placeholder/400/320" alt="Budget Room in Nirvana">
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title">Budget Room in Nirvana</h3>
+                        <div class="room-details">
+                            <div class="room-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Nirvana</span>
+                            </div>
+                            <div class="room-detail">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>10 m²</span>
+                            </div>
+                            <div class="room-detail">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Available Now</span>
+                            </div>
+                        </div>
+                        <div class="room-amenities">
+                            <span class="amenity">Furnished</span>
+                            <span class="amenity">Water Included</span>
+                        </div>
+                        <div class="room-price">R1,800/month</div>
+                        <div class="room-actions">
+                            <a href="#" class="view-details">View Details</a>
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room 4 -->
+                <div class="room-card">
+                    <div class="room-badge">New</div>
+                    <div class="room-img">
+                        <img src="/api/placeholder/400/320" alt="Premium Room in City Center">
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title">Premium Room in City Center</h3>
+                        <div class="room-details">
+                            <div class="room-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>City Center</span>
+                            </div>
+                            <div class="room-detail">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>18 m²</span>
+                            </div>
+                            <div class="room-detail">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Available: 1 May</span>
+                            </div>
+                        </div>
+                        <div class="room-amenities">
+                            <span class="amenity">Wi-Fi</span>
+                            <span class="amenity">En-suite</span>
+                            <span class="amenity">Furnished</span>
+                            <span class="amenity">Security</span>
+                            <span class="amenity">Kitchen Access</span>
+                        </div>
+                        <div class="room-price">R3,800/month</div>
+                        <div class="room-actions">
+                            <a href="#" class="view-details">View Details</a>
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room 5 -->
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="/api/placeholder/400/320" alt="Cozy Room in Bendor">
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title">Cozy Room in Bendor</h3>
+                        <div class="room-details">
+                            <div class="room-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Bendor</span>
+                            </div>
+                            <div class="room-detail">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>14 m²</span>
+                            </div>
+                            <div class="room-detail">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Available Now</span>
+                            </div>
+                        </div>
+                        <div class="room-amenities">
+                            <span class="amenity">Wi-Fi</span>
+                            <span class="amenity">Shared Bathroom</span>
+                            <span class="amenity">Prepaid Electricity</span>
+                        </div>
+                        <div class="room-price">R2,800/month</div>
+                        <div class="room-actions">
+                            <a href="#" class="view-details">View Details</a>
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room 6 -->
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="/api/placeholder/400/320" alt="Student Room near Campus">
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title">Student Room near Campus</h3>
+                        <div class="room-details">
+                            <div class="room-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>University Area</span>
+                            </div>
+                            <div class="room-detail">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>12 m²</span>
+                            </div>
+                            <div class="room-detail">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Available: 10 April</span>
+                            </div>
+                        </div>
+                        <div class="room-amenities">
+                            <span class="amenity">Wi-Fi</span>
+                            <span class="amenity">Furnished</span>
+                            <span class="amenity">Communal Kitchen</span>
+                        </div>
+                        <div class="room-price">R2,400/month</div>
+                        <div class="room-actions">
+                            <a href="#" class="view-details">View Details</a>
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>About Rent In PLK</h3>
+                <p>We're a platform dedicated to helping students find affordable rooms without the hassle of going door-to-door.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="rooms.html">Room Listings</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-envelope"></i> support@affordablerooms.com</p>
+                <p><i class="fas fa-phone"></i> +27 123 456 789</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Room Street, Pretoria, South Africa</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 Rent In PLK. All rights reserved.</p>
+            <p>Website created by Geekaz</p>
+        </div>
+    </footer>
+
+  
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+<script src="admin/firebase-config.js"></script>
+<script src="javascript/room.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

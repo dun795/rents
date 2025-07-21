@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Rent In PLK Admin Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="stylesheet/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <div class="logo">RentInPLK</div>
+                <div class="logo-subtitle">Admin Portal</div>
+            </div>
+
+            <!-- Login Header -->
+            <div class="login-header">
+                <h1 class="login-title">Welcome Back</h1>
+                <p class="login-subtitle">Sign in to access your dashboard</p>
+            </div>
+
+            <!-- Error/Success Messages -->
+            <div id="errorMessage" class="error-message">
+                <i class="fas fa-exclamation-circle"></i>
+                <span id="errorText">Invalid username or password</span>
+            </div>
+            <div id="successMessage" class="success-message">
+                <i class="fas fa-check-circle"></i>
+                <span id="successText">Login successful! Redirecting...</span>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm">
+                <!-- User Type Selection -->
+                <div class="user-type-selector">
+                    <div class="user-type-option">
+                        <input type="radio" id="admin" name="userType" value="admin" checked>
+                        <label for="admin" class="user-type-label">
+                            <i class="fas fa-user-shield"></i>
+                            Admin
+                        </label>
+                    </div>
+                    <div class="user-type-option">
+                        <input type="radio" id="landlord" name="userType" value="landlord">
+                        <label for="landlord" class="user-type-label">
+                            <i class="fas fa-building"></i>
+                            Landlord
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Username Field -->
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="username" 
+                            name="username" 
+                            class="form-input" 
+                            placeholder="Enter your username"
+                            required
+                            autocomplete="username"
+                        >
+                        <i class="fas fa-user input-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Password Field -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-wrapper">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            class="form-input" 
+                            placeholder="Enter your password"
+                            required
+                            autocomplete="current-password"
+                        >
+                        <i class="fas fa-lock input-icon"></i>
+                    </div>
+                </div>
+
+                <!-- Forgot Password -->
+                <div class="forgot-password">
+                    <a href="#" id="forgotPasswordLink">Forgot your password?</a>
+                </div>
+
+                <!-- Login Button -->
+                <button type="submit" class="login-button" id="loginButton">
+                    Sign In
+                </button>
+            </form>
+
+            <!-- Divider -->
+            <div class="divider">
+                <span>Secure Access</span>
+            </div>
+
+            <!-- Back to Site -->
+            <div class="back-to-site">
+                <a href="../index.html">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Main Site
+                </a>
+            </div>
+
+            <!-- Security Badge -->
+            <div class="security-badge">
+                <i class="fas fa-shield-alt"></i>
+                <span>256-bit SSL Encrypted Connection</span>
+            </div>
+        </div>
+    </div>
+
+<script src="javascript/login.js"></script>
+</body>
+</html>

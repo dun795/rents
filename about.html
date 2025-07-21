@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about the team behind Rent In PLK and our mission to help students find affordable housing in Polokwane.">
+    <meta name="keywords" content="about us, rent in plk, student housing, team, polokwane accommodation">
+    <meta name="author" content="Elias Malope">
+    <title>About Us - Rent In PLK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+        /* About page specific styles */
+        .about-hero {
+            background: linear-gradient(rgba(27, 38, 59, 0.8), rgba(27, 38, 59, 0.9)), url('images/rentinPlk.jpg') no-repeat center center;
+            background-size: cover;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .about-hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-hero-content p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .about-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .team-section {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .team-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #1e293b;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            width: 280px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-img {
+            height: 280px;
+            background-color: #edf2ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .team-img i {
+            font-size: 5rem;
+            color: #3762dd;
+        }
+
+        .team-info {
+            padding: 25px;
+        }
+
+        .team-info h3 {
+            margin-bottom: 10px;
+            color: #1e293b;
+        }
+
+        .team-info p {
+            color: #64748b;
+            margin-bottom: 15px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: #edf2ff;
+            color: #3762dd;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background-color: #3762dd;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .mission-section {
+            background-color: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 60px;
+        }
+
+        .mission-section h2 {
+            color: #1e293b;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .mission-section h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #3762dd;
+        }
+
+        .values {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .value-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .value-card i {
+            font-size: 2.5rem;
+            color: #3762dd;
+            margin-bottom: 15px;
+        }
+
+        .value-card h3 {
+            margin-bottom: 10px;
+            color: #1e293b;
+        }
+
+        .value-card p {
+            color: #64748b;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .values {
+                grid-template-columns: 1fr;
+            }
+
+            .about-hero-content h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rent In Polokwane</h1>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">RentInPLK</a>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>Our Story</h1>
+            <p>Discover the team and vision behind Rent In PLK, where finding affordable accommodation meets seamless experience.</p>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="mission-section">
+            <h2>Our Mission</h2>
+            <p>At Rent In PLK, we're on a mission to transform how students find accommodation in Polokwane. We understand the challenges students face when searching for a place to stay that's both affordable and suitable for their academic needs.</p>
+            <p>Our platform eliminates the need for door-to-door searching, saving time and reducing stress for students. We've created a centralized marketplace where verified rooms can be easily found, compared, and secured.</p>
+
+            <div class="values">
+                <div class="value-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Affordability</h3>
+                    <p>We prioritize listings that respect student budgets while maintaining quality standards.</p>
+                </div>
+
+                <div class="value-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security</h3>
+                    <p>Every listing is verified for safety and security to protect our student community.</p>
+                </div>
+
+                <div class="value-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Community</h3>
+                    <p>We build relationships between students and landlords based on trust and respect.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <div class="team-img">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="team-info">
+                        <h3>Elias Kgaphola</h3>
+                        <p>Co-Founder & Developer</p>
+                        <p>Former student who experienced the housing struggle firsthand and committed to solving it.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-img">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="team-info">
+                        <h3>Mashoto Matsi</h3>
+                        <p>Co-Founder & Operations</p>
+                        <p>Housing expert with a passion for helping students find their perfect accommodation match.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-grid">
+            <div>
+                <h2>Our Journey</h2>
+                <p>Rent In PLK began with a simple observation: students in Polokwane were spending too much time and energy finding accommodation. The process was stressful, time-consuming, and often led to disappointment.</p>
+                <p>Having experienced these challenges ourselves, we built a platform that centralizes listings, provides accurate information, and streamlines the booking process. What started as a small project has grown into a trusted resource for the student community in Polokwane.</p>
+                <p>Today, we're proud to have helped hundreds of students find their ideal rooms, saving them time and reducing the stress of accommodation hunting.</p>
+            </div>
+            <div>
+                <h2>Looking Forward</h2>
+                <p>Our vision extends beyond just listing rooms. We're building a comprehensive ecosystem that supports students throughout their accommodation journey – from finding a room to managing payments and resolving issues.</p>
+                <p>We're working on innovative features like:</p>
+                <ul>
+                    <li>Virtual room tours</li>
+                    <li>Roommate matching services</li>
+                    <li>Integrated payment systems</li>
+                    <li>Maintenance request tracking</li>
+                    <li>Community forums for each residence</li>
+                </ul>
+                <p>We believe that every student deserves quality, affordable accommodation that enhances their academic experience, not complicates it.</p>
+            </div>
+        </div>
+
+        <div class="cta">
+            <h2>Ready to Find Your Perfect Room?</h2>
+            <p>Join hundreds of students who have already found their ideal accommodation through Rent In PLK.</p>
+            <a href="rooms.html" class="button">Browse Available Rooms</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>About Rent In PLK</h3>
+                <p>We're a platform dedicated to helping students find affordable rooms without the hassle of going door-to-door.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="rooms.html">Room Listings</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-envelope"></i> support@affordablerooms.com</p>
+                <p><i class="fas fa-phone"></i> +27 123 456 789</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Room Street, Polokwane, South Africa</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 Rent In PLK. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
